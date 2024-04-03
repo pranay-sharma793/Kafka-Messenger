@@ -1,0 +1,3 @@
+org/kafka/consumer/entity/KafkaMessage.class
+org/kafka/consumer/Main.class
+org/kafka/consumer/service/KafkaConsumer.class

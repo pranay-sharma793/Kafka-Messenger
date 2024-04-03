@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Board</title>
+</head>
+<body>
+<h1>Message Board</h1>
+<form action="/postMessage" method="post">
+    <input type="text" name="message" placeholder="Enter message">
+    <button type="submit">Send</button>
+</form>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Message</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="msg : ${messages}">
+        <td th:text="${msg}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

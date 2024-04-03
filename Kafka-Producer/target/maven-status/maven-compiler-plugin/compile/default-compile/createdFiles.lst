@@ -1,0 +1,4 @@
+org/example/Main.class
+org/example/controller/Controller.class
+org/example/entity/KafkaMessage.class
+org/example/service/KafkaProducer.class
